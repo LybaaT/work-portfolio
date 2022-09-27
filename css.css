@@ -44,10 +44,11 @@ body {
 .orange {
     color: #e55934;
     font-size: 50px;
+    text-align: center;
     font-family: "laiba";
 }
 .h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "robert";
 }
 .clickers {
@@ -63,3 +64,20 @@ body {
     background-color: black;
     color: white;
 }
+.clickers a {
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+.a {
+    color: black;
+}
+.a:hover {
+    color: #e55934;
+}
+.form-control:focus {
+    border: black 1px solid;
+    box-shadow: none;
+}
+

@@ -37,36 +37,36 @@
             </div>
         </nav>
     </div>
-    
+
     <div class="container">
     <!--text-->
-    <h1>Let's talk</h1>
-    <h2>Whether you have a friendly query about my work or a serious business talk, I'd love to have a chat with you.</h2>
-    <p>All you need to do is fill this simple form that wont take more than 5 minutes. Please entail every detail you'd like me to know and I will get back to you ASAP. (You can directly email me at <a href="mailto: lybataryk@gmail.com">lybataryk@gmail.com</a> if that's more convenient to you.)</p>
+    <h1 class="orange">Let's talk</h1><br><br>
+    <h2 class="h2">Whether you have a friendly query about my work or a serious business talk, I'd love to have a chat with you.
+        All you need to do is fill this simple form and entail every detail you'd like me to know. (Not a fan of forms? Me neither! Email me directly at 
+        <a class="a" href="mailto: lybataryk@gmail.com">lybataryk@gmail.com</a>)</h2><br>
     <!--form-->
         <form>
             <div class="row">
                 <div class="col">
                     <div class="form-group">
                         <label for="firstname">First Name *</label>        
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" required pattern="[A-Za-z]{3}">
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="firstname">Last Name</label>        
                         <input type="text" class="form-control">
-
                     </div>
                 </div>
-            </div>
+            </div><br>
             <div class="row">
                 <div class="form-group">
                     <label for="email">Email *</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
                     <small id="emailHelp" class="form-text text-muted">We never share your email with anyone else.</small>
                 </div>
-            </div>
+            </div><br>
             <div class="row">
                 <div class="form-group">
                     <label for="selections">Reason Of Contact</label>
@@ -78,19 +78,19 @@
                             <option>Other</option>
                         </select>
                   </div>
-            </div>
+            </div><br>
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Your Message here *</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-        </form><br>
+                <label for="exampleFormControlTextarea1">Your Message Here *</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div><br><br>
+            <button class="clickers" type="submit">Submit</button>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
     <!--footer-->
     <div class="container-fluid p-0">
-        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <footer class="text-center text-white">
             <div class="container pt-4">
                 <section class="mb-4">
                 <!-- Upwork -->
