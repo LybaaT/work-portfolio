@@ -47,9 +47,15 @@ body {
     text-align: center;
     font-family: "laiba";
 }
+.head1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "laiba";
+}
 .h2 {
     font-size: 18px;
     font-family: "robert";
+    text-align: center;
 }
 .clickers {
     border: 2px solid black;
@@ -80,4 +86,11 @@ a {
     border: black 1px solid;
     box-shadow: none;
 }
-
+.client {
+    height: 50vh;
+    padding-top: 20vh;
+    border-bottom: solid 1px grey;
+}
+.testimony {
+    
+}
