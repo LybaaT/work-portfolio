@@ -65,6 +65,7 @@ body {
     font-size: 18px;
     border-radius: 30px;
     padding: 1vh 1vw;
+    text-align: center;
 }
 .clickers:hover {
     background-color: black;
@@ -87,10 +88,10 @@ a {
     box-shadow: none;
 }
 .client {
-    height: 50vh;
-    padding-top: 20vh;
+    height: 65vh;
+    padding-top: 10vh;
     border-bottom: solid 1px grey;
 }
-.testimony {
-    
+.active {
+    border-bottom: 1px solid black;
 }
