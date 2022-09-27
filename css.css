@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "europa";
+    src: url(Europa\ Regular.ttf);
+}
+@font-face {
+    font-family: "robert";
+    src: url(Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "laiba";
+    src: url(Corben-Regular.ttf);
+}
+body {
+    background-color: #f8f4f1;
+    color: black;
+    font-family: "europa";
+}
+.navbar {
+    padding: 5vh 2vw;
+}
+.navbar-brand {
+    font-size: 35px;
+    font-family: "laiba";
+    font-weight: 400;
+}
+.nav-link {
+    color: black;
+    font-family: "robert";
+    font-size: 12px;
+    margin-left: 2vw;
+    margin-top: 4px;
+    border-bottom: 1px solid #f8f4f1;
+}
+.nav-link:hover {
+    border-bottom: 1px solid black;
+    color: black;
+}
+.bigText {
+    height: 80vh;
+    text-align: center;
+    padding-top: 20vh;
+    border-bottom: solid 1px grey;
+}
+.orange {
+    color: #e55934;
+    font-size: 50px;
+    font-family: "laiba";
+}
+.h2 {
+    font-size: 20px;
+    font-family: "robert";
+}
+.clickers {
+    border: 2px solid black;
+    background-color: #f8f4f1;
+    color: black;
+    font-family: "robert";
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 1vh 1vw;
+}
+.clickers:hover {
+    background-color: black;
+    color: white;
+}
