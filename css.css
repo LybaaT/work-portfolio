@@ -42,7 +42,7 @@ body {
 }
 .orange {
     color: #e55934;
-    font-size: 50px;
+    font-size: 5vh;
     text-align: center;
     font-family: "laiba";
 }
@@ -91,6 +91,10 @@ a {
     border-bottom: solid 1px grey;
 }
 .brands {
-    max-width: 13vw;
+    max-width: 10vw;
     text-align: center;
+}
+.borderbottom {
+    border-bottom: solid 1px grey;
+    padding: 12vh 5vw;
 }
