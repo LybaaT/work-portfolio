@@ -36,9 +36,8 @@ body {
     color: black;
 }
 .bigText {
-    height: 80vh;
     text-align: center;
-    padding-top: 20vh;
+    padding: 25vh 5vw;
     border-bottom: solid 1px grey;
 }
 .orange {
@@ -88,7 +87,10 @@ a {
     box-shadow: none;
 }
 .client {
-    height: 65vh;
-    padding-top: 10vh;
+    padding: 10vh 5vw;
     border-bottom: solid 1px grey;
+}
+.brands {
+    max-width: 13vw;
+    text-align: center;
 }
