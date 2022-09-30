@@ -106,3 +106,13 @@ a {
 .left {
     text-align: left;
 }
+.accordion-button {
+    background-color: #f8f4f1;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: #e55934;
+}
+.accordian-body {
+    background-color: #a15216;
+    
+}
