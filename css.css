@@ -99,20 +99,21 @@ a {
     padding: 12vh 5vw;
 }
 .profile {
-    max-width: 400px;
+    max-width: 25vw;
     border-radius: 25px;
-    
 }
 .left {
     text-align: left;
+    padding-top: 5.5vh;
 }
 .accordion-button {
     background-color: #f8f4f1;
     border: none;
     border-bottom: 1px solid gray;
     color: #e55934;
+    font-family: "laiba";
 }
-.accordian-body {
-    background-color: #a15216;
-    
+.accordion-body {
+    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+    background-color: #f8f4f1;
 }
