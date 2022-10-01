@@ -92,7 +92,9 @@ a {
 }
 .brands {
     max-width: 10vw;
-    text-align: center;
+    transform: scale(1.6);
+    margin: auto;
+    display: block;
 }
 .borderbottom {
     border-bottom: solid 1px grey;
@@ -125,10 +127,6 @@ a {
     border: none;
 }
 .accordion-item:first-of-type {
-    border: none;
-    border-bottom: 1px solid green;
-}
-.accordion-item:second-of-type {
     border: none;
     border-bottom: 1px solid green;
 }
