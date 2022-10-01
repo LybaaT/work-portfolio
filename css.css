@@ -11,7 +11,7 @@
     src: url(Corben-Regular.ttf);
 }
 body {
-    background-color: #f8f4f1;
+    background-color: #f6f4d2;
     color: black;
     font-family: "europa";
 }
@@ -29,7 +29,7 @@ body {
     font-size: 12px;
     margin-left: 2vw;
     margin-top: 4px;
-    border-bottom: 1px solid #f8f4f1;
+    border-bottom: 1px solid #f6f4d2;
 }
 .nav-link:hover {
     border-bottom: 1px solid black;
@@ -37,12 +37,12 @@ body {
 }
 .bigText {
     text-align: center;
-    padding: 15vw 5vw;
+    padding: 10vw 5vw;
     border-bottom: solid 1px grey;
 }
 .orange {
-    color: #e55934;
-    font-size: 5vh;
+    color: #a44a3f;
+    font-size: 4vw;
     text-align: center;
     font-family: "laiba";
 }
@@ -58,7 +58,7 @@ body {
 }
 .clickers {
     border: 2px solid black;
-    background-color: #f8f4f1;
+    background-color: #f6f4d2;
     color: black;
     font-family: "robert";
     font-size: 18px;
@@ -80,7 +80,7 @@ a {
     color: black;
 }
 .a:hover {
-    color: #e55934;
+    color: #a44a3f;
 }
 .form-control:focus {
     border: black 1px solid;
@@ -109,21 +109,21 @@ a {
     padding-top: 5.5vh;
 }
 .accordion-button {
-    background-color: #f8f4f1;
+    background-color: #f6f4d2;
     border: none;
-    color: #e55934;
+    color: #a44a3f;
     font-family: "laiba";
     font-size: 20px;
     padding: 20px 5px;
 }
 .accordion-body {
     padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
-    background-color: #f8f4f1;
+    background-color: #f6f4d2;
 }
 .accordion-button:not(.collapsed) {
-    background-color: #f8f4f1;
+    background-color: #f6f4d2;
     box-shadow: none;
-    color: #e59e34;
+    color: #f19c79;
     border: none;
 }
 .accordion-item {
@@ -141,5 +141,23 @@ a {
     }
     .profile {
         width: 100% !important;
+    }
+}
+.reveal {
+    opacity: 0;
+}
+.active {
+    animation: active 0.6s ease-out;
+    transition: all 0.2s ease-out;
+    opacity: 1;
+} 
+@keyframes active {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
