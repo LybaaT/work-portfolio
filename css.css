@@ -139,4 +139,7 @@ a {
         width: 50% !important;
         transform: scale(1.2);
     }
+    .profile {
+        width: 100% !important;
+    }
 }
