@@ -37,7 +37,7 @@ body {
 }
 .bigText {
     text-align: center;
-    padding: 25vh 5vw;
+    padding: 15vw 5vw;
     border-bottom: solid 1px grey;
 }
 .orange {
@@ -111,10 +111,10 @@ a {
 .accordion-button {
     background-color: #f8f4f1;
     border: none;
-    border-bottom: 1px solid gray;
     color: #e55934;
     font-family: "laiba";
     font-size: 20px;
+    padding: 20px 5px;
 }
 .accordion-body {
     padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
@@ -126,7 +126,17 @@ a {
     color: #e59e34;
     border: none;
 }
-.accordion-item:first-of-type {
+.accordion-item {
     border: none;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid grey;
+}
+@media only screen and (max-width: 1000px) {
+    .col-4 {
+        width: 100% !important;
+        margin-bottom: 7vh;
+    }
+    .col-3 {
+        width: 50% !important;
+        transform: scale(1.2);
+    }
 }
