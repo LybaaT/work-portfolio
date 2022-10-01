@@ -91,8 +91,8 @@ a {
     border-bottom: solid 1px grey;
 }
 .brands {
-    max-width: 10vw;
-    transform: scale(1.6);
+    max-width: 200px;
+    max-height: 200px;
     margin: auto;
     display: block;
 }
