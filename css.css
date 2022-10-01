@@ -112,8 +112,23 @@ a {
     border-bottom: 1px solid gray;
     color: #e55934;
     font-family: "laiba";
+    font-size: 20px;
 }
 .accordion-body {
     padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
     background-color: #f8f4f1;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #f8f4f1;
+    box-shadow: none;
+    color: #e59e34;
+    border: none;
+}
+.accordion-item:first-of-type {
+    border: none;
+    border-bottom: 1px solid green;
+}
+.accordion-item:second-of-type {
+    border: none;
+    border-bottom: 1px solid green;
 }
