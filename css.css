@@ -11,7 +11,7 @@
     src: url(Corben-Regular.ttf);
 }
 body {
-    background-color: #f6f4d2;
+    background-color: #f8f4f1;
     color: black;
     font-family: "europa";
 }
@@ -29,7 +29,7 @@ body {
     font-size: 12px;
     margin-left: 2vw;
     margin-top: 4px;
-    border-bottom: 1px solid #f6f4d2;
+    border-bottom: 1px solid #f8f4f1;
 }
 .nav-link:hover {
     border-bottom: 1px solid black;
@@ -41,10 +41,11 @@ body {
     border-bottom: solid 1px grey;
 }
 .orange {
-    color: #a44a3f;
-    font-size: 4vw;
+    color: #ff5f0f;
+    font-size: 55px;
     text-align: center;
     font-family: "laiba";
+    margin-bottom: 5vh;
 }
 .head1 {
     font-size: 30px;
@@ -58,7 +59,7 @@ body {
 }
 .clickers {
     border: 2px solid black;
-    background-color: #f6f4d2;
+    background-color: #f8f4f1;
     color: black;
     font-family: "robert";
     font-size: 18px;
@@ -80,7 +81,7 @@ a {
     color: black;
 }
 .a:hover {
-    color: #a44a3f;
+    color: #ff5f0f;
 }
 .form-control:focus {
     border: black 1px solid;
@@ -109,26 +110,26 @@ a {
     padding-top: 5.5vh;
 }
 .accordion-button {
-    background-color: #f6f4d2;
+    background-color: #f8f4f1;
     border: none;
-    color: #a44a3f;
+    color: #2eb6bd;
     font-family: "laiba";
     font-size: 20px;
     padding: 20px 5px;
 }
 .accordion-body {
     padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
-    background-color: #f6f4d2;
+    background-color: #f8f4f1;
 }
 .accordion-button:not(.collapsed) {
-    background-color: #f6f4d2;
+    background-color: #f8f4f1;
     box-shadow: none;
-    color: #f19c79;
+    color: #0c9fa7;
     border: none;
 }
 .accordion-item {
     border: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #3f898d;
 }
 @media only screen and (max-width: 1000px) {
     .col-4 {
@@ -160,4 +161,18 @@ a {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+.service {
+    padding: 50px;
+    margin-bottom: 25vh;
+    height: 60vh;
+    text-align: center;
+
+}
+.serviceImage {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    display: block;
+    margin-bottom: 5vh;
 }
