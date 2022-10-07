@@ -11,7 +11,7 @@
     src: url(Corben-Regular.ttf);
 }
 body {
-    background-color: #f6f4d2;
+    background-color: #f4ede6;
     color: black;
     font-family: "europa";
 }
@@ -29,7 +29,7 @@ body {
     font-size: 12px;
     margin-left: 2vw;
     margin-top: 4px;
-    border-bottom: 1px solid #f6f4d2;
+    border-bottom: 1px solid #f4ede6;
 }
 .nav-link:hover {
     border-bottom: 1px solid black;
@@ -37,12 +37,13 @@ body {
 }
 .bigText {
     text-align: center;
-    padding: 10vw 5vw;
+    padding: 7vw 5vw;
     border-bottom: solid 1px grey;
 }
 .orange {
-    color: #a44a3f;
+    color: #db7a58;
     font-size: 4vw;
+    padding: 2vh 1vw;
     text-align: center;
     font-family: "laiba";
 }
@@ -58,7 +59,7 @@ body {
 }
 .clickers {
     border: 2px solid black;
-    background-color: #f6f4d2;
+    background-color: #f4ede6;
     color: black;
     font-family: "robert";
     font-size: 18px;
@@ -80,7 +81,7 @@ a {
     color: black;
 }
 .a:hover {
-    color: #a44a3f;
+    color: #db7a58;
 }
 .form-control:focus {
     border: black 1px solid;
@@ -103,32 +104,33 @@ a {
 .profile {
     max-width: 25vw;
     border-radius: 25px;
+    display: inline-block;
 }
 .left {
     text-align: left;
     padding-top: 5.5vh;
 }
 .accordion-button {
-    background-color: #f6f4d2;
+    background-color: #f4ede6;
     border: none;
-    color: #a44a3f;
+    color: #208085;
     font-family: "laiba";
     font-size: 20px;
     padding: 20px 5px;
 }
 .accordion-body {
     padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
-    background-color: #f6f4d2;
+    background-color: #f4ede6;
 }
 .accordion-button:not(.collapsed) {
-    background-color: #f6f4d2;
+    background-color: #f4ede6;
     box-shadow: none;
-    color: #f19c79;
+    color: #208085;
     border: none;
 }
 .accordion-item {
     border: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #208085;
 }
 @media only screen and (max-width: 1000px) {
     .col-4 {
@@ -138,9 +140,6 @@ a {
     .col-3 {
         width: 50% !important;
         transform: scale(1.2);
-    }
-    .profile {
-        width: 100% !important;
     }
 }
 .reveal {
