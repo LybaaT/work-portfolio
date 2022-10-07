@@ -11,7 +11,7 @@
     src: url(Corben-Regular.ttf);
 }
 body {
-    background-color: #f4ede6;
+    background-color: #f8f4f1;
     color: black;
     font-family: "europa";
 }
@@ -29,7 +29,7 @@ body {
     font-size: 12px;
     margin-left: 2vw;
     margin-top: 4px;
-    border-bottom: 1px solid #f4ede6;
+    border-bottom: 1px solid #f8f4f1;
 }
 .nav-link:hover {
     border-bottom: 1px solid black;
@@ -41,9 +41,8 @@ body {
     border-bottom: solid 1px grey;
 }
 .orange {
-    color: #db7a58;
-    font-size: 4vw;
-    padding: 2vh 1vw;
+    color: #f54c0f;
+    font-size: 35px;
     text-align: center;
     font-family: "laiba";
 }
@@ -59,7 +58,7 @@ body {
 }
 .clickers {
     border: 2px solid black;
-    background-color: #f4ede6;
+    background-color: #f8f4f1;
     color: black;
     font-family: "robert";
     font-size: 18px;
@@ -81,7 +80,7 @@ a {
     color: black;
 }
 .a:hover {
-    color: #db7a58;
+    color: #f54c0f;
 }
 .form-control:focus {
     border: black 1px solid;
@@ -108,10 +107,9 @@ a {
 }
 .left {
     text-align: left;
-    padding-top: 5.5vh;
 }
 .accordion-button {
-    background-color: #f4ede6;
+    background-color: #f8f4f1;
     border: none;
     color: #208085;
     font-family: "laiba";
@@ -120,10 +118,10 @@ a {
 }
 .accordion-body {
     padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
-    background-color: #f4ede6;
+    background-color: #f8f4f1;
 }
 .accordion-button:not(.collapsed) {
-    background-color: #f4ede6;
+    background-color: #f8f4f1;
     box-shadow: none;
     color: #208085;
     border: none;
@@ -140,6 +138,9 @@ a {
     .col-3 {
         width: 50% !important;
         transform: scale(1.2);
+    }
+    .split {
+        width: 100% !important;
     }
 }
 .reveal {
@@ -161,11 +162,21 @@ a {
     }
 }
 .service {
-    text-align: center;
-    top: 5vh;
     margin-bottom: 15vh;
+    padding: 40px;
+    text-align: center;
 }
 .serviceImage {
-    max-width: 200px;
-    margin: auto;
+    max-width: 400px;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+}
+.h3 {
+    font-size: 15px;
+    font-family: "robert";
+    text-align: left;
+}
+.split {
+    text-align: left;
 }
