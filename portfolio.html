@@ -1,249 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="lt.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Laiba Tariq</title>
-    <link rel="stylesheet" href="css.css">
-    <style>
-    .portfolio {
-        display: flex;
-    }
-#cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;  
-  max-width: 916px;
-  width: calc(100% - 20px);
-}
-
-#cards:hover > .card::after {
-  opacity: 1;
-}
-
-.card {
-  background-color: #f8f4f1;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  height: 260px;
-  flex-direction: column;
-  position: relative;
-  width: 300px;  
-}
-
-.card:hover::before {
-  opacity: 1;
-}
-
-.card::before,
-.card::after {
-  border-radius: inherit;
-  content: "";
-  height: 100%;
-  left: 0px;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  transition: opacity 500ms;
-  width: 100%;
-}
-
-.card::before {
-  background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(75, 2, 2, 0.863),
-    transparent 40%
-  );
-  z-index: 3;
-}
-
-.card::after {  
-  background: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.4),
-    transparent 40%
-  );
-  z-index: 1;
-}
-
-.card > .card-content {
-  background-color: var(--card-color);
-  border-radius: inherit;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  inset: 1px;
-  padding: 10px;
-  position: absolute;
-  z-index: 2;
-}
-
-/* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
-
-h1, h2, h3, h4, span {
-  color: rgb(240, 240, 240);
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  margin: 0px;
-}
-
-i {  
-  color: rgb(240, 240, 240);
-}
-
-.card-image {
-  align-items: center;
-  display: flex;
-  height: 140px;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.card-image > i {
-  font-size: 6em;
-  opacity: 0.25;
-}
-
-.card-info-wrapper {
-  align-items: center;
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-start;
-  padding: 0px 20px;
-}
-
-.card-info {
-  align-items: flex-start;
-  display: flex;
-  gap: 10px;
-}
-
-.card-info > i {  
-  font-size: 1em;
-  height: 20px;
-  line-height: 20px;
-}
-
-.card-info-title > h3 {
-  font-size: 1.1em;
-  line-height: 20px;
-}
-
-.card-info-title > h4 {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.85em;
-  margin-top: 8px;
-}
-
-/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
-
-@media(max-width: 1000px) {
-  body {
-    align-items: flex-start;  
-    overflow: auto;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="lt.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>Laiba Tariq</title>
+  <link rel="stylesheet" href="css.css">
+  <style>
+  .portfolio {
+      display: flex;
   }
-  
-  #cards {    
-    max-width: 1000px;
-    padding: 10px 0px;
+  #cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  
+    justify-content: center;
+    width: calc(100% - 20px);
   }
-  
+
+  #cards:hover > .card::after {
+    opacity: 1;
+  }
+
   .card {
-    flex-shrink: 1;
-    width: calc(50% - 4px);
+    background-color: #f8f4f1;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-basis: 30%;
+    height: 260px;
+    flex-direction: column;
+    position: relative;
+    width: 300px;  
   }
-}
 
-@media(max-width: 500px) {
-  .card {
-    height: 180px;
+  .card:hover::before {
+    opacity: 1;
   }
-  
+
+  .card::before,
+  .card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+  }
+
+  .card::before {
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y), 
+      #f54c0f49,
+      transparent 40%
+    );
+    z-index: 3;
+  }
+
+  .card::after {  
+    background: radial-gradient(
+      600px circle at var(--mouse-x) var(--mouse-y), 
+      rgba(255, 255, 255, 0.4),
+      transparent 40%
+    );
+    z-index: 1;
+  }
+
+  .card > .card-content {
+    background-color: #fafafa;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
+
+  h3, h4 {
+    color: black;
+    font-weight: 400;
+    margin: 0px;
+  }
+
   .card-image {
-    height: 80px;  
+    align-items: center;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    overflow: hidden;
   }
-  
+
   .card-image > i {
-    font-size: 3em;
+    font-size: 6em;
+    opacity: 0.25;
   }
-    
+
   .card-info-wrapper {
-    padding: 0px 10px;
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding: 0px 20px;
   }
-  
-  .card-info > i { 
-    font-size: 0.8em; 
+
+  .card-info {
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
   }
-  
+
+  .card-info > i {  
+    font-size: 1em;
+    height: 20px;
+    line-height: 20px;
+  }
+
   .card-info-title > h3 {
-    font-size: 0.9em;
+    font-size: 20px;
+    font-family: "laiba";
+    line-height: 20px;
   }
 
   .card-info-title > h4 {
-    font-size: 0.8em;
-    margin-top: 4px;
+    color: black(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-family: "europa";
+    margin-top: 15px;
   }
-}
-
-@media(max-width: 320px) {
-  .card {
-    width: 100%;
+  .span {
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    background-color: #bebebe;
+    padding: 5px;
+    margin-right: 10px;
+    color: white;
   }
-}
 
-/* -- ↓ ↓ ↓ YouTube link styles ↓ ↓ ↓ -- */
+  /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
 
-#youtube-link {
-  bottom: 10px;
-}
+  @media(max-width: 1000px) {
+    body {
+      align-items: flex-start;  
+      overflow: auto;
+    }
+    
+    #cards {    
+      max-width: 1000px;
+      padding: 10px 0px;
+    }
+    
+    .card {
+      flex-shrink: 1;
+      width: calc(50% - 4px);
+    }
+  }
 
-#youtube-link > i {
-  color: rgb(239, 83, 80);
-}
+  @media(max-width: 500px) {
+    .card {
+      height: 180px;
+    }
+    
+    .card-image {
+      height: 80px;  
+    }
+    
+    .card-image > i {
+      font-size: 3em;
+    }
+      
+    .card-info-wrapper {
+      padding: 0px 10px;
+    }
+    
+    .card-info > i { 
+      font-size: 0.8em; 
+    }
+    
+    .card-info-title > h3 {
+      font-size: 0.9em;
+    }
 
-#source-link {
-  bottom: 60px;
-}
+    .card-info-title > h4 {
+      font-size: 0.8em;
+      margin-top: 4px;
+    }
+  }
 
-#source-link > i {
-  color: rgb(94, 106, 210);
-}
-
-.link {
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;  
-  display: inline-flex;
-  gap: 5px;
-  left: 10px;
-  padding: 10px 20px;
-  position: fixed;
-  text-decoration: none;
-  z-index: 100;
-}
-
-.link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.link > i, .link > span {
-  height: 20px;
-  line-height: 20px;
-}
-
-.link > span {
-  color: white;
-}
-    </style>
+  @media(max-width: 320px) {
+    .card {
+      width: 100%;
+    }
+  }
+  img {
+    max-width: 250px;
+    padding: 20px;
+  }
+  </style>
 </head>
 <body>
     <!--navigation-->
@@ -277,19 +238,49 @@ i {
             </div>
         </nav>
     </div>
+
     <!--portfolio cards-->
     <div class="container portfolio">
         <div id="cards">
             <div class="card">
                 <div class="card-content">
                 <div class="card-image">
-                    <i class="fa-duotone fa-apartment"></i>
+                  <img src="mty.png" alt="mother trucker yoga">
                 </div>
                 <div class="card-info-wrapper">
                     <div class="card-info">
-                    <i class="fa-duotone fa-apartment"></i>
                     <div class="card-info-title">
-                        <h3>Apartments</h3>  
+                        <h3>Mother Trucker Yoga</h3>  
+                        <h4><span class="span">Trucking Yoga</span><span class="span">Health</span></h4>
+                    </div>    
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                <div class="card-image">
+                  <img src="sleepo.png" alt="sleepopolis">
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                    <div class="card-info-title">
+                        <h3>Sleepopolis</h3>  
+                        <h4>Sleep health, mattress reviews</h4>
+                    </div>    
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                <div class="card-image">
+                  <img src="corsetstory.png" alt="corset story UK">
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                    <div class="card-info-title">
+                        <h3>Corset Story UK</h3>  
                         <h4>Places to be apart. Wait, what?</h4>
                     </div>    
                     </div>
@@ -299,13 +290,12 @@ i {
             <div class="card">
                 <div class="card-content">
                 <div class="card-image">
-                    <i class="fa-duotone fa-apartment"></i>
+                  <img src="mhd.png" alt="Mobile Health Data">
                 </div>
                 <div class="card-info-wrapper">
                     <div class="card-info">
-                    <i class="fa-duotone fa-apartment"></i>
                     <div class="card-info-title">
-                        <h3>Apartments</h3>  
+                        <h3>Mobile Health Data</h3>  
                         <h4>Places to be apart. Wait, what?</h4>
                     </div>    
                     </div>
@@ -315,45 +305,12 @@ i {
             <div class="card">
                 <div class="card-content">
                 <div class="card-image">
-                    <i class="fa-duotone fa-apartment"></i>
+                  <img src="resumeworded.png" alt="Resume Worded">
                 </div>
                 <div class="card-info-wrapper">
                     <div class="card-info">
-                    <i class="fa-duotone fa-apartment"></i>
                     <div class="card-info-title">
-                        <h3>Apartments</h3>  
-                        <h4>Places to be apart. Wait, what?</h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                    <i class="fa-duotone fa-apartment"></i>
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <i class="fa-duotone fa-apartment"></i>
-                    <div class="card-info-title">
-                        <h3>Apartments</h3>  
-                        <h4>Places to be apart. Wait, what?</h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                    <i class="fa-duotone fa-unicorn"></i>
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <i class="fa-duotone fa-unicorn"></i>
-                    <div class="card-info-title">
-                        <h3>Unicorns</h3>  
+                        <h3>Resume Worded</h3>  
                         <h4>A single corn. Er, I mean horn.</h4>
                     </div>    
                     </div>  
@@ -436,7 +393,7 @@ i {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 2500" width="16" height="16"><path d="m2315.4 0h-2130.7c-102 0-184.7 80.2-184.7 179.1v2141.7c0 99 82.7 179.2 184.7 179.2h2130.7c102 0 184.6-80.3 184.6-179.2v-2141.7c0-98.9-82.6-179.1-184.6-179.1z" fill="#212529"/><path d="m1834.6 1453.7c-98.4 0-190.5-41.7-274.3-109.6l20.4-95.8.9-3.5c18.2-102 75.8-273.3 253-273.3 132.9 0 241 108.3 241 241.3-.4 132.6-108.5 240.9-241 240.9zm0-726.7c-226.4 0-401.9 147.3-473.2 389.5-109-163.7-191.4-360.2-239.7-525.7h-243.6v634.8c0 125.1-101.9 227.1-226.9 227.1s-226.8-102-226.8-227.1v-634.8h-243.7v634.8c-.9 260 210.5 473.4 470.1 473.4s471-213.4 471-473.4v-106.5c47.4 98.9 105.4 198.7 175.9 287.5l-149.3 702.7h249.5l108.1-509.7c94.8 60.8 203.8 98.9 328.8 98.9 267.2 0 484.7-219.2 484.7-486.7-.2-267-217.7-484.8-484.9-484.8z" fill="#fff"/></svg></a>
                     
                 <!-- Email -->
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto: laibatariq132@gmail.com" role="button">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="/cdn-cgi/l/email-protection#56763a373f34372237243f2767656416313b373f3a7835393b" role="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
                     <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
                     </svg></a>
@@ -467,7 +424,7 @@ i {
             </footer>
     </div>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         document.getElementById("cards").onmousemove = e => {
             for(const card of document.getElementsByClassName("card")) {
                 const rect = card.getBoundingClientRect(),
@@ -479,5 +436,6 @@ i {
             };
         }
     </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7606dd30a837b7c7","version":"2022.10.3","r":1,"token":"d75eedf4cd3342e1a7c62e3047a9380d","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
