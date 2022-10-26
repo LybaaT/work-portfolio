@@ -56,7 +56,7 @@
   .card::before {
     background: radial-gradient(
       800px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(75, 2, 2, 0.863),
+      #f54c0f49,
       transparent 40%
     );
     z-index: 3;
@@ -72,7 +72,7 @@
   }
 
   .card > .card-content {
-    background-color: #f8f4f1;
+    background-color: #fafafa;
     border-radius: inherit;
     display: flex;
     flex-direction: column;
@@ -191,6 +191,10 @@
       width: 100%;
     }
   }
+  img {
+    max-width: 250px;
+    padding: 20px;
+  }
   </style>
 </head>
 <body>
@@ -225,20 +229,20 @@
             </div>
         </nav>
     </div>
+
     <!--portfolio cards-->
     <div class="container portfolio">
         <div id="cards">
             <div class="card">
                 <div class="card-content">
                 <div class="card-image">
-                    <i class="fa-duotone fa-apartment"></i>
+                  <img src="mty.png" alt="mother trucker yoga">
                 </div>
                 <div class="card-info-wrapper">
                     <div class="card-info">
-                    <i class="fa-duotone fa-apartment"></i>
                     <div class="card-info-title">
-                        <h3>Apartments</h3>  
-                        <h4>Places to be apart. Wait, what?</h4>
+                        <h3>Mother Trucker Yoga</h3>  
+                        <h4>Content writing about health, yoga, meditation and content marketing.</h4>
                     </div>    
                     </div>
                 </div>
@@ -247,11 +251,10 @@
             <div class="card">
                 <div class="card-content">
                 <div class="card-image">
-                    <i class="fa-duotone fa-apartment"></i>
+                  <img src="sleepo.png" alt="sleepopolis">
                 </div>
                 <div class="card-info-wrapper">
                     <div class="card-info">
-                    <i class="fa-duotone fa-apartment"></i>
                     <div class="card-info-title">
                         <h3>Apartments</h3>  
                         <h4>Places to be apart. Wait, what?</h4>
