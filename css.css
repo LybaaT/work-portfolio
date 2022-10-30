@@ -35,6 +35,21 @@ body {
     border-bottom: 1px solid black;
     color: black;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.dropdown-menu {
+    background-color: #f8f4f1;
+    border: 1px solid black;
+    border-radius: 0px;
+    --bs-dropdown-padding-y: 0;
+}
+.dropdown-item:hover {
+    color: #f54c0f;
+    background-color: #ecded3;
+}
+
 .bigText {
     text-align: center;
     padding: 7vw 5vw;
