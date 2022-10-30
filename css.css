@@ -95,6 +95,11 @@ a {
     max-height: 200px;
     margin: auto;
     display: block;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.brands:hover {
+    transform: scale(1.2);
 }
 .borderbottom {
     border-bottom: solid 1px grey;
