@@ -9,201 +9,9 @@
   <title>Laiba Tariq</title>
   <link rel="stylesheet" href="css.css">
   <style>
-  .portfolio {
-      display: flex;
-  }
-  #cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;  
-    justify-content: center;
-    width: calc(100% - 20px);
-  }
-
-  #cards:hover > .card::after {
-    opacity: 1;
-  }
-
-  .card {
-    background-color: #f8f4f1;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    flex-basis: 30%;
-    height: 260px;
-    flex-direction: column;
-    position: relative;
-    width: 300px;  
-  }
-
-  .card:hover::before {
-    opacity: 1;
-  }
-
-  .card::before,
-  .card::after {
-    border-radius: inherit;
-    content: "";
-    height: 100%;
-    left: 0px;
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    transition: opacity 500ms;
-    width: 100%;
-  }
-
-  .card::before {
-    background: radial-gradient(
-      800px circle at var(--mouse-x) var(--mouse-y), 
-      #f54c0f49,
-      transparent 40%
-    );
-    z-index: 3;
-  }
-
-  .card::after {  
-    background: radial-gradient(
-      600px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.4),
-      transparent 40%
-    );
-    z-index: 1;
-  }
-
-  .card > .card-content {
-    background-color: #fafafa;
-    border-radius: inherit;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    inset: 1px;
-    padding: 10px;
-    position: absolute;
-    z-index: 2;
-  }
-
-  /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
-
-  h3, h4 {
-    color: black;
-    font-weight: 400;
-    margin: 0px;
-  }
-
-  .card-image {
-    align-items: center;
-    display: flex;
-    height: 140px;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .card-image > i {
-    font-size: 6em;
-    opacity: 0.25;
-  }
-
-  .card-info-wrapper {
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-start;
-    padding: 0px 20px;
-  }
-
-  .card-info {
-    align-items: flex-start;
-    display: flex;
-    gap: 10px;
-  }
-
-  .card-info > i {  
-    font-size: 1em;
-    height: 20px;
-    line-height: 20px;
-  }
-
-  .card-info-title > h3 {
-    font-size: 20px;
-    font-family: "laiba";
-    line-height: 20px;
-  }
-
-  .card-info-title > h4 {
-    color: black(255, 255, 255, 0.5);
-    font-size: 15px;
-    font-family: "europa";
-    margin-top: 15px;
-  }
-  .span {
-    border: 1px solid rgb(182, 182, 182);
-    border-radius: 5px;
-    background-color: #bebebe;
-    padding: 5px;
-    margin-right: 10px;
-    color: white;
-  }
-
-  /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
-
-  @media(max-width: 1000px) {
-    body {
-      align-items: flex-start;  
-      overflow: auto;
+    .portfolio {
+      padding: 20px 50px;
     }
-    
-    #cards {    
-      max-width: 1000px;
-      padding: 10px 0px;
-    }
-    
-    .card {
-      flex-shrink: 1;
-      width: calc(50% - 4px);
-    }
-  }
-
-  @media(max-width: 500px) {
-    .card {
-      height: 180px;
-    }
-    
-    .card-image {
-      height: 80px;  
-    }
-    
-    .card-image > i {
-      font-size: 3em;
-    }
-      
-    .card-info-wrapper {
-      padding: 0px 10px;
-    }
-    
-    .card-info > i { 
-      font-size: 0.8em; 
-    }
-    
-    .card-info-title > h3 {
-      font-size: 0.9em;
-    }
-
-    .card-info-title > h4 {
-      font-size: 0.8em;
-      margin-top: 4px;
-    }
-  }
-
-  @media(max-width: 320px) {
-    .card {
-      width: 100%;
-    }
-  }
-  img {
-    max-width: 250px;
-    padding: 20px;
-  }
   </style>
 </head>
 <body>
@@ -245,148 +53,42 @@
 
     <!--portfolio cards-->
     <div class="container portfolio">
-        <div id="cards">
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                  <img src="mty.png" alt="mother trucker yoga">
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <div class="card-info-title">
-                        <h3>Mother Trucker Yoga</h3>  
-                        <h4><span class="span">Trucking Yoga</span><span class="span">Health</span></h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                  <img src="sleepo.png" alt="sleepopolis">
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <div class="card-info-title">
-                        <h3>Sleepopolis</h3>  
-                        <h4><span class="span">Sleep Health</span><span class="span">Mattress Reviews</span></h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                  <img src="corsetstory.png" alt="corset story UK">
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <div class="card-info-title">
-                        <h3>Corset Story UK</h3>  
-                        <h4><span class="span">Fashion</span><span class="span">Brand Marketing</span></h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                  <img src="mhd.png" alt="Mobile Health Data">
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <div class="card-info-title">
-                        <h3>Mobile Health Data</h3>  
-                        <h4>Places to be apart. Wait, what?</h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                  <img src="resumeworded.png" alt="Resume Worded">
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <div class="card-info-title">
-                        <h3>Resume Worded</h3>  
-                        <h4>A single corn. Er, I mean horn.</h4>
-                    </div>    
-                    </div>  
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                  <img src="topbullies.png" alt="Top Bullies">
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <i class="fa-duotone fa-blender-phone"></i>
-                    <div class="card-info-title">
-                        <h3>Top Bully Owners</h3>  
-                        <h4>These absolutely deserve to exist.</h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                    <i class="fa-duotone fa-person-to-portal"></i>
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <i class="fa-duotone fa-person-to-portal"></i>
-                    <div class="card-info-title">
-                        <h3>Adios</h3>  
-                        <h4>See you...</h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                    <i class="fa-duotone fa-person-from-portal"></i>
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <i class="fa-duotone fa-person-from-portal"></i>
-                    <div class="card-info-title">
-                        <h3>I mean hello</h3>  
-                        <h4>...over here.</h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                <div class="card-image">
-                    <i class="fa-duotone fa-otter"></i>
-                </div>
-                <div class="card-info-wrapper">
-                    <div class="card-info">
-                    <i class="fa-duotone fa-otter"></i>
-                    <div class="card-info-title">
-                        <h3>Otters</h3>  
-                        <h4>Look at me, imma cute lil fella.</h4>
-                    </div>    
-                    </div>
-                </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-4">
+          <h1 class="orange left">Publications</h1>
         </div>
+        <div class="col-8">
+          <div class="container" style="border-bottom: 1px solid black;">
+            <h2>Heading</h2>
+            <p>Description enters here lorem dipsum shit bleh bleh checking how wide this text will span and all that jazz wooo woooo ewjjf alllllll of it</p>
+            <a href="#">this is a link!</a>
+          </div>
+        </div><br>
+        <div class="col-8">
+          <div class="container" style="border-bottom: 1px solid black;">
+            <h2>Heading</h2>
+            <p>Description enters here lorem dipsum shit bleh bleh checking how wide this text will span and all that jazz wooo woooo ewjjf alllllll of it</p>
+            <a href="#">this is a link!</a>
+          </div>
+        </div><br>
+        <div class="col-8">
+          <div class="container" style="border-bottom: 1px solid black;">
+            <h2>Heading</h2>
+            <p>Description enters here lorem dipsum shit bleh bleh checking how wide this text will span and all that jazz wooo woooo ewjjf alllllll of it</p>
+            <a href="#">this is a link!</a>
+          </div>
+        </div><br>
+        <div class="col-8">
+          <div class="container" style="border-bottom: 1px solid black;">
+            <h2>Heading</h2>
+            <p>Description enters here lorem dipsum shit bleh bleh checking how wide this text will span and all that jazz wooo woooo ewjjf alllllll of it</p>
+            <a href="#">this is a link!</a>
+          </div>
+        </div><br>
+      </div>
     </div>
+
+
     <!--footer-->
     <div class="container-fluid p-0">
         <footer class="text-center text-white">
