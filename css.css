@@ -202,6 +202,27 @@ a {
 .split {
     text-align: left;
 }
-
-
-
+.swal-button {
+    background-color: #f54c0f;
+    border: 1px solid black;
+    font-family: "robert";
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.swal-button:not([disabled]):hover {
+    background-color: #dd3d03;
+    border: 1px solid black;
+    font-family: "robert";
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.swal-button:active {
+    background-color: black;
+}
+.swal-title {
+    font-family: "laiba";
+    color: black;
+}
+.swal-text {
+    font-family: "robert";
+}
